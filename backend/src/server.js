@@ -3,7 +3,7 @@ import dotenv from "dotenv";
 import Razorpay from "razorpay";
 import connectDB from "./db/connectDB.js";
 
-if(process.env.NODE !== "production"){
+if(process.env.NODE_ENV !== "production"){
     dotenv.config({path: "config.env"});
 }
 
